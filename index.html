@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mental and Emotional Checker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Language Selection -->
+<div id="languageScreen" class="container active">
+    <h1>Select Your Language</h1>
+    <select id="languageSelect">
+        <option value="en-US">English</option>
+        <option value="hi-IN">Hindi</option>
+        <option value="ta-IN">Tamil</option>
+        <option value="ml-IN">Malayalam</option>
+    </select>
+    <button class="btn" onclick="selectLanguage()">Start</button>
+</div>
+
+<!-- Step 1: Intro -->
+<div id="step1" class="container">
+    <h1 id="welcomeText"></h1>
+    <p id="introText" class="message"></p>
+    <button class="btn" onclick="nextStep()">Next</button>
+</div>
+
+<!-- Step 2: Emotion Selection -->
+<div id="step2" class="container">
+    <h2 id="questionText"></h2>
+    <div id="optionsContainer"></div>
+</div>
+
+<!-- Step 3: Output Suggestions -->
+<div id="output" class="output container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
